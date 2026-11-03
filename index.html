@@ -3,281 +3,498 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aionis Solutions — Soluções e Consultoria em TI</title>
-  <meta name="description" content="Aionis Solutions: soluções de TI sob medida, automação de processos, sistemas personalizados e consultoria especializada para o seu negócio." />
+  <title>Aionis Solutions — Sistemas sob medida e TI no Vale do Paraíba</title>
+  <meta name="description" content="Sistemas sob medida, automação, dados e infraestrutura de TI para indústria, serviços e comércio no Vale do Paraíba. Visita de diagnóstico gratuita de 2 horas." />
+  <meta name="theme-color" content="#0A0F2E" />
+  <link rel="canonical" href="https://aionissolutions.com.br/" />
   <link rel="icon" type="image/png" href="Icon_Ionis_sem_fundo.png" />
   <link rel="apple-touch-icon" href="Icon_Ionis_sem_fundo.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Aionis Solutions" />
+  <meta property="og:title" content="Aionis Solutions — Tecnologia sob medida para a sua operação" />
+  <meta property="og:description" content="Sistemas, automação, dados e infraestrutura de TI para indústria, serviços e comércio. Agende uma visita de diagnóstico gratuita." />
+  <meta property="og:url" content="https://aionissolutions.com.br/" />
+  <meta property="og:image" content="https://aionissolutions.com.br/img/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Logotipo da Aionis Solutions" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aionis Solutions — Tecnologia sob medida para a sua operação" />
+  <meta name="twitter:description" content="Sistemas, automação, dados e infraestrutura de TI para indústria, serviços e comércio." />
+  <meta name="twitter:image" content="https://aionissolutions.com.br/img/og.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Aionis Solutions",
+    "description": "Sistemas sob medida, automação, dados e infraestrutura de TI para indústria, serviços e comércio.",
+    "url": "https://aionissolutions.com.br/",
+    "logo": "https://aionissolutions.com.br/img/logo.webp",
+    "image": "https://aionissolutions.com.br/img/og.png",
+    "telephone": "+55-12-99604-9308",
+    "email": "contato@aionissolutions.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pindamonhangaba",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Vale do Paraíba, SP" },
+      { "@type": "Country", "name": "Brasil (atendimento remoto)" }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "telephone": "+55-12-99604-9308",
+      "email": "contato@aionissolutions.com.br",
+      "availableLanguage": "Portuguese"
+    }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Ícones (sprite). Uso: <svg class="icon"><use href="#i-nome"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+      <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+      <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 17.5v-11"/></symbol>
+      <symbol id="i-network" viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></symbol>
+      <symbol id="i-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+      <symbol id="i-building" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></symbol>
+      <symbol id="i-store" viewBox="0 0 24 24"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+      <symbol id="i-link" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+
   <!-- ===================== HEADER ===================== -->
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="Aionis Solutions - página inicial">
-        <img src="Aionis logo_sem_fundo.png" alt="Aionis Solutions" class="brand-logo" />
+      <a href="#top" class="brand" aria-label="Aionis Solutions - início">
+        <img src="img/logo.webp" alt="Aionis Solutions" class="brand-logo" width="500" height="160" />
       </a>
 
       <nav class="nav" aria-label="Navegação principal">
         <ul class="nav-list">
-          <li><a href="#top">Início</a></li>
           <li><a href="#solucoes">Soluções</a></li>
-          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#como-trabalhamos">Como trabalhamos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
 
-      <a href="https://wa.me/5512996049308?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Aionis%20Solutions%20sobre%20solu%C3%A7%C3%B5es%20de%20TI." class="btn btn-gradient btn-header" target="_blank" rel="noopener">Fale Conosco</a>
+      <a href="https://wa.me/5512996049308?text=Ol%C3%A1!%20Quero%20agendar%20uma%20visita%20de%20diagn%C3%B3stico%20gratuita." class="btn btn-primary btn-header" target="_blank" rel="noopener">Falar no WhatsApp</a>
 
-      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
-        <span></span><span></span><span></span>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="#i-x"/></svg>
       </button>
     </div>
 
-    <!-- Mobile nav -->
     <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação móvel" hidden>
-      <a href="#top">Início</a>
       <a href="#solucoes">Soluções</a>
-      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#como-trabalhamos">Como trabalhamos</a>
       <a href="#contato">Contato</a>
-      <a href="https://wa.me/5512996049308?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Aionis%20Solutions%20sobre%20solu%C3%A7%C3%B5es%20de%20TI." class="btn btn-gradient" target="_blank" rel="noopener">Fale Conosco</a>
     </nav>
   </header>
 
-  <main>
-    <!-- ===================== HERO ===================== -->
-    <section class="hero">
-      <div class="hero-glow" aria-hidden="true"></div>
+  <main id="main">
+    <!-- ===================== 1. HERO ===================== -->
+    <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-inner">
         <div class="hero-content">
-          <span class="eyebrow">
-            <span class="eyebrow-dot" aria-hidden="true"></span>
-            Tecnologia que impulsiona resultados
-          </span>
-          <h1 class="hero-title">
-            Soluções de TI <span class="grad-text">sob medida</span> para o seu negócio
-          </h1>
-          <p class="hero-subtitle">
-            Automação de processos, sistemas personalizados e consultoria
-            especializada para transformar desafios em vantagem competitiva.
-          </p>
+          <h1 id="hero-title" class="hero-title">Tecnologia sob medida para a sua operação</h1>
+          <p class="hero-subtitle">Sistemas, automação, dados e infraestrutura de TI para indústria, serviços e comércio.</p>
           <div class="hero-actions">
-            <a href="#contato" class="btn btn-gradient btn-lg">Solicite um orçamento</a>
-            <a href="#solucoes" class="btn btn-ghost btn-lg">Conheça as soluções</a>
+            <a href="https://wa.me/5512996049308?text=Ol%C3%A1!%20Quero%20agendar%20uma%20visita%20de%20diagn%C3%B3stico%20gratuita." class="btn btn-primary btn-lg" target="_blank" rel="noopener" data-track="whatsapp-hero">Agendar visita de diagnóstico gratuita</a>
+            <a href="#projetos" class="btn btn-outline-light btn-lg">Ver projetos</a>
           </div>
-
-          <ul class="hero-stats">
-            <li>
-              <strong>+ Agilidade</strong>
-              <span>Entregas rápidas e iterativas</span>
-            </li>
-            <li>
-              <strong>100% Sob medida</strong>
-              <span>Feito para o seu processo</span>
-            </li>
-            <li>
-              <strong>Suporte real</strong>
-              <span>Atendimento próximo e humano</span>
-            </li>
-          </ul>
+          <p class="hero-support">Visita de 2 horas, sem custo e sem compromisso · Retorno em até 1 dia útil.</p>
         </div>
 
-        <div class="hero-visual" aria-hidden="true">
-          <div class="visual-card visual-card-main">
-            <div class="vc-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6-6-6"/><path d="M12 19h8"/></svg>
-            </div>
-            <div class="vc-lines"><span></span><span></span><span></span></div>
+        <figure class="hero-visual">
+          <div class="device">
+            <img src="img/print-aionis-finance.webp" width="600" height="759" fetchpriority="high"
+                 alt="Tela de lançamentos financeiros do Aionis Finance, com menu lateral, totais de receitas, despesas e saldo, filtros e lista de lançamentos." />
           </div>
-          <div class="visual-card visual-card-float visual-card-b">
-            <div class="vc-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
-            </div>
-            <div class="vc-text"><strong>Processo automatizado</strong><span>+68% de eficiência</span></div>
-          </div>
-          <div class="visual-card visual-card-float visual-card-c">
-            <div class="vc-bars"><i style="height:34%"></i><i style="height:58%"></i><i style="height:44%"></i><i style="height:78%"></i><i style="height:64%"></i></div>
-            <span class="vc-caption">Desempenho em tempo real</span>
-          </div>
-        </div>
+          <figcaption>Aionis Finance, projeto desenvolvido pela Aionis.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- ===================== TRUST STRIP ===================== -->
-    <section class="trust">
-      <div class="container trust-inner">
-        <p>Confiança de quem precisa de tecnologia que funciona</p>
-        <div class="trust-items">
-          <span>Desenvolvimento sob demanda</span>
-          <span class="dot" aria-hidden="true"></span>
-          <span>Integração de sistemas</span>
-          <span class="dot" aria-hidden="true"></span>
-          <span>Automação inteligente</span>
-          <span class="dot" aria-hidden="true"></span>
-          <span>Consultoria estratégica</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== SERVICES ===================== -->
-    <section class="section services" id="solucoes">
+    <!-- ===================== 2. O PROBLEMA ===================== -->
+    <section class="section" id="problema" aria-labelledby="problema-title">
       <div class="container">
         <div class="section-head">
-          <span class="section-tag">Nossas Soluções</span>
-          <h2 class="section-title">Tecnologia completa, do código à estratégia</h2>
-          <p class="section-lead">
-            Combinamos desenvolvimento, automação e consultoria para entregar
-            exatamente o que o seu negócio precisa — nada mais, nada menos.
-          </p>
+          <h2 class="section-title" id="problema-title">Sua operação roda em planilhas, papel e sistemas que não conversam.</h2>
+        </div>
+        <ul class="pain-grid">
+          <li class="pain">
+            <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span>
+            <h3>Informação espalhada</h3>
+            <p>Os mesmos dados são digitados de novo em cada planilha e cada sistema, e o retrabalho não acaba.</p>
+          </li>
+          <li class="pain">
+            <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="#i-scan"/></svg></span>
+            <h3>Sem rastreio</h3>
+            <p>Ninguém sabe ao certo onde está o material nem quem o movimentou.</p>
+          </li>
+          <li class="pain">
+            <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
+            <h3>Decisão com dado atrasado</h3>
+            <p>O número chega depois que a decisão já precisou ser tomada.</p>
+          </li>
+        </ul>
+        <p class="pain-close">A Aionis conecta isso.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 3. SOLUÇÕES ===================== -->
+    <section class="section section-alt" id="solucoes" aria-labelledby="solucoes-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="solucoes-title">Quatro frentes para tirar a operação do improviso</h2>
         </div>
 
         <div class="cards-grid">
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
-            </div>
-            <h3>Soluções de TI personalizadas</h3>
-            <p>Desenvolvimento sob demanda de aplicações web, sistemas internos e integrações desenhadas para o seu fluxo de trabalho.</p>
-            <span class="card-link">Sob demanda &rarr;</span>
+          <article class="card card-featured">
+            <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
+            <h3>Sistemas sob medida</h3>
+            <p>Seu processo sai do papel e da planilha para um sistema rastreável: estoque, kanban e transferências por leitura de código, inventário cego, etiquetas, perfis e histórico.</p>
+            <a class="card-cta" href="https://wa.me/5512996049308?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20Sistemas%20sob%20medida." target="_blank" rel="noopener" data-track="whatsapp-sistemas">Conversar sobre sistemas<svg class="icon" aria-hidden="true"><use href="#i-message"/></svg></a>
           </article>
 
           <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
-            </div>
-            <h3>Soluções prontas</h3>
-            <p>Produtos e sistemas já estruturados para implantação rápida, com configuração ágil e custo previsível.</p>
-            <span class="card-link">Pronto para usar &rarr;</span>
+            <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></span>
+            <h3>Dados e BI</h3>
+            <p>Indicadores de ERP, planilhas e apontamentos reunidos em painéis, em Power BI ou web.</p>
+            <a class="card-cta" href="https://wa.me/5512996049308?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20Dados%20e%20BI." target="_blank" rel="noopener" data-track="whatsapp-dados">Conversar sobre dados<svg class="icon" aria-hidden="true"><use href="#i-message"/></svg></a>
           </article>
 
           <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
-            </div>
-            <h3>Automação de processos</h3>
-            <p>Elimine tarefas repetitivas e reduza erros com fluxos automatizados que liberam a sua equipe para o que importa.</p>
-            <span class="card-link">Ganhe eficiência &rarr;</span>
+            <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="#i-receipt"/></svg></span>
+            <h3>Financeiro e automação</h3>
+            <p>Contas, conciliação e notas em dia. Leitura de documentos por IA, com revisão humana antes de lançar no ERP.</p>
+            <a class="card-cta" href="https://wa.me/5512996049308?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20Financeiro%20e%20automa%C3%A7%C3%A3o." target="_blank" rel="noopener" data-track="whatsapp-financeiro">Conversar sobre automação<svg class="icon" aria-hidden="true"><use href="#i-message"/></svg></a>
           </article>
 
           <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>
-            </div>
-            <h3>Consultoria em TI</h3>
-            <p>Diagnóstico, planejamento e orientação técnica para tomar decisões de tecnologia com segurança e visão de futuro.</p>
-            <span class="card-link">Estratégia clara &rarr;</span>
+            <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="#i-network"/></svg></span>
+            <h3>Infraestrutura e redes</h3>
+            <p>IP fixo e VPN entre unidades, servidor local integrado à nuvem, rede mesh, Wi-Fi interno separado do de visitantes, CFTV com mapa de cabos. Toda implantação inclui documentação técnica completa.</p>
+            <a class="card-cta" href="https://wa.me/5512996049308?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20Infraestrutura%20e%20redes." target="_blank" rel="noopener" data-track="whatsapp-infra">Conversar sobre redes<svg class="icon" aria-hidden="true"><use href="#i-message"/></svg></a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===================== WHY AIONIS ===================== -->
-    <section class="section why" id="sobre">
-      <div class="container why-inner">
-        <div class="why-copy">
-          <span class="section-tag">Por que a Aionis</span>
-          <h2 class="section-title">Parceria técnica que gera resultado</h2>
-          <p class="section-lead">
-            Somos uma equipe que fala a língua do negócio e a linguagem da tecnologia.
-            Traduzimos objetivos em sistemas que funcionam, escalam e economizam tempo.
-          </p>
-
-          <ul class="feature-list">
-            <li>
-              <span class="feature-ic">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-3 7h6l-3 7"/></svg>
-              </span>
-              <div>
-                <strong>Agilidade</strong>
-                <p>Metodologia enxuta, entregas frequentes e comunicação transparente do início ao fim.</p>
-              </div>
-            </li>
-            <li>
-              <span class="feature-ic">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
-              </span>
-              <div>
-                <strong>Experiência técnica</strong>
-                <p>Domínio real de desenvolvimento, integração e automação aplicado a cada projeto.</p>
-              </div>
-            </li>
-            <li>
-              <span class="feature-ic">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              </span>
-              <div>
-                <strong>Atendimento personalizado</strong>
-                <p>Você fala com quem constrói. Proximidade, escuta e soluções feitas para o seu contexto.</p>
-              </div>
-            </li>
-          </ul>
+    <!-- ===================== 4. CLIENTES ===================== -->
+    <section class="section" id="clientes" aria-labelledby="clientes-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="clientes-title">Quem já trabalha com a Aionis</h2>
         </div>
 
-        <aside class="why-panel">
-          <div class="panel-metric">
-            <span class="metric-num grad-text">Ágil</span>
-            <span class="metric-label">Ciclos de entrega curtos e previsíveis</span>
+        <div class="client-grid">
+          <article class="client">
+            <div class="client-head">
+              <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg></span>
+              <div>
+                <h3>P&amp;G Engenharia</h3>
+                <p class="client-sub">Engenharia e construção civil</p>
+              </div>
+            </div>
+            <p class="todo">[PREENCHER: logo autorizado da P&amp;G]</p>
+            <ul class="check-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Automação fiscal integrada ao ERP, com conciliação bancária.</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Infraestrutura com servidor local e nuvem, rede mesh, Wi-Fi segmentado e VPN entre duas sedes, tudo documentado.</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Projeto de CFTV e mapa de passagem de cabos.</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Sistemas internos de gestão financeira (Python, FastAPI, PostgreSQL).</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Aplicativos internos sobre AWS.</li>
+            </ul>
+            <p class="client-result"><strong>Resultado:</strong> rede dimensionada para até <span class="num">35</span> usuários em <span class="num">2</span> sedes.</p>
+          </article>
+
+          <article class="client">
+            <div class="client-head">
+              <span class="icon-circle"><svg class="icon" aria-hidden="true"><use href="#i-store"/></svg></span>
+              <div>
+                <h3>Mr Foods</h3>
+                <p class="client-sub">Hamburgueria · Moreira César, Pindamonhangaba</p>
+              </div>
+              <span class="badge">Cliente interno</span>
+            </div>
+            <p>O fundador usa no próprio negócio o que a Aionis cria. Cardápio digital por link no WhatsApp, PDV com estoque e painel que consolida vendas de iFood, 99Food e WhatsApp; módulo financeiro em beta.</p>
+            <p class="client-quote">Usamos no nosso próprio negócio o que entregamos aos clientes.</p>
+            <figure class="shot">
+              <img src="img/print-mrfoods.webp" width="600" height="756" loading="lazy"
+                   alt="Tela do sistema da Mr Foods, com cardápio digital e painel de vendas." />
+            </figure>
+            <a class="text-link" href="https://mrfoodsburguer.com.br" target="_blank" rel="noopener">mrfoodsburguer.com.br<svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. PROJETOS ===================== -->
+    <section class="section section-dark" id="projetos" aria-labelledby="projetos-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="projetos-title">Projetos desenvolvidos pela Aionis</h2>
+          <p class="section-lead">Soluções construídas por nós, algumas já em uso na nossa própria operação.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project">
+            <span class="badge badge-light">Em uso na operação própria</span>
+            <h3>Mr Foods: PDV, cardápio digital e financeiro</h3>
+            <p>Cardápio digital por link no WhatsApp, PDV com estoque e painel que consolida vendas de iFood, 99Food e WhatsApp. Módulo financeiro em beta.</p>
+            <a class="text-link" href="https://mrfoodsburguer.com.br" target="_blank" rel="noopener">mrfoodsburguer.com.br<svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></a>
+          </article>
+
+          <article class="project">
+            <span class="badge badge-light">Em beta test</span>
+            <h3>Aionis Finance</h3>
+            <p>Notas e comprovantes enviados por WhatsApp, lidos e classificados por IA.</p>
+            <a class="text-link" href="https://aionisfinance.com.br" target="_blank" rel="noopener">aionisfinance.com.br<svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></a>
+            <figure class="shot">
+              <img src="img/print-aionis-finance.webp" width="600" height="759" loading="lazy"
+                   alt="Tela de lançamentos financeiros do Aionis Finance." />
+            </figure>
+          </article>
+
+          <article class="project">
+            <span class="badge badge-light">Protótipo funcional</span>
+            <h3>Controle de estoque e Kanban por leitura de código</h3>
+            <p>Transferências, inventário cego, etiquetas e rastreio, perfis e histórico de movimentação.</p>
+            <p class="project-note">Sem imagem por confidencialidade.</p>
+          </article>
+        </div>
+        <p class="project-foot">Demonstração disponível na visita.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 6. QUEM ENTREGA ===================== -->
+    <section class="section section-alt" id="quem-entrega" aria-labelledby="quem-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="quem-title">Você fala com quem constrói</h2>
+        </div>
+
+        <div class="founder">
+          <div class="founder-id">
+            <div class="todo todo-photo">[PREENCHER: foto]</div>
+            <h3>Adsow Batista</h3>
+            <p class="client-sub">Fundador</p>
           </div>
-          <div class="panel-divider" aria-hidden="true"></div>
-          <ul class="panel-points">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Código próprio e documentado</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Integração com o que você já usa</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Foco em ROI e eficiência</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Suporte contínuo pós-entrega</li>
-          </ul>
-        </aside>
+          <div class="founder-body">
+            <ul class="edu-list">
+              <li>
+                <span class="icon-circle icon-circle-sm"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></span>
+                <div><strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong><span>Fatec Taubaté (<span class="num">2025</span>)</span></div>
+              </li>
+              <li>
+                <span class="icon-circle icon-circle-sm"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></span>
+                <div><strong>Pós-graduação em Computação Quântica</strong><span>PUC Minas (em andamento, conclusão prevista <span class="num">07/2027</span>)</span></div>
+              </li>
+              <li>
+                <span class="icon-circle icon-circle-sm"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span>
+                <div><strong>Certificações</strong><span>Cisco CCNA · AWS Academy</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- ===================== CONTACT ===================== -->
-    <section class="section contact" id="contato">
+    <!-- ===================== 7. TÉCNICO ===================== -->
+    <section class="section" id="tecnico" aria-labelledby="tecnico-title">
+      <div class="container container-narrow">
+        <div class="section-head">
+          <h2 class="section-title" id="tecnico-title">Para quem vai avaliar a parte técnica</h2>
+        </div>
+
+        <div class="accordion">
+          <details>
+            <summary>Stack<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="acc-body"><p>Python, FastAPI, PostgreSQL, React, Docker, AWS, Power BI.</p></div>
+          </details>
+          <details>
+            <summary>Propriedade<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="acc-body"><p>Código, dados e documentação técnica são do cliente, inclusive no fim do contrato.</p></div>
+          </details>
+          <details>
+            <summary>Qualidade<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="acc-body"><p>Primeira versão com testes automatizados e escopo fechado no diagnóstico.</p></div>
+          </details>
+          <details>
+            <summary>IA com controle<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="acc-body"><p>Revisão humana antes de lançar no ERP.</p></div>
+          </details>
+          <details>
+            <summary>Acesso<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="acc-body"><p>Perfis por usuário e histórico de movimentações.</p></div>
+          </details>
+          <details>
+            <summary>Integração<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="acc-body"><p>Com o ERP e as ferramentas que a empresa já usa, via API.</p></div>
+          </details>
+          <details class="todo">
+            <summary>LGPD e segurança<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="acc-body"><p>[PREENCHER: só o que é garantido de fato]</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 8. COMO TRABALHAMOS ===================== -->
+    <section class="section section-alt" id="como-trabalhamos" aria-labelledby="como-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="como-title">Da visita ao suporte, em quatro etapas</h2>
+        </div>
+
+        <ol class="timeline">
+          <li>
+            <span class="step-num">1</span>
+            <h3>Diagnóstico</h3>
+            <p>Visita sem custo, sem compromisso.</p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3>MVP</h3>
+            <p>Primeira versão em até <span class="num">2</span> semanas, com escopo fechado no diagnóstico.</p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3>Implantação</h3>
+            <p>Treinamento, migração de dados e ajustes.</p>
+          </li>
+          <li>
+            <span class="step-num">4</span>
+            <h3>Suporte</h3>
+            <p>Mensalidade com SLA de resposta em até <span class="num">4</span> horas úteis.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== 9. FAQ ===================== -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container container-narrow">
+        <div class="section-head">
+          <h2 class="section-title" id="faq-title">Perguntas que surgem antes de contratar</h2>
+        </div>
+
+        <div class="accordion">
+          <details>
+            <summary>Quanto custa?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="acc-body"><p>Depende do escopo. O diagnóstico é gratuito e sai com proposta fechada.</p></div>
+          </details>
+          <details>
+            <summary>Atendem fora do Vale do Paraíba?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="acc-body"><p>Sim, de forma remota para outras regiões.</p></div>
+          </details>
+          <details>
+            <summary>O sistema fica preso a vocês?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="acc-body"><p>Não. Código, dados e documentação são do cliente.</p></div>
+          </details>
+          <details>
+            <summary>Precisa trocar o ERP?<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+            <div class="acc-body"><p>Não. Integramos com o que já existe.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 10. CONTATO ===================== -->
+    <section class="section section-dark" id="contato" aria-labelledby="contato-title">
       <div class="container contact-inner">
         <div class="contact-copy">
-          <span class="section-tag">Contato</span>
-          <h2 class="section-title">Vamos construir a sua próxima solução</h2>
-          <p class="section-lead">
-            Conte o seu desafio e retornamos com uma proposta objetiva.
-            Sem compromisso — apenas a conversa certa para começar.
-          </p>
+          <h2 class="section-title" id="contato-title">Vamos conversar sobre a sua operação.</h2>
+          <p class="section-lead">Visita de diagnóstico de 2 horas, sem custo e sem compromisso. Retorno em até 1 dia útil.</p>
 
-          <ul class="contact-info">
-            <li>
-              <span class="ci-ic">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              </span>
-              <div>
-                <span class="ci-label">E-mail</span>
-                <a href="mailto:contato@aionissolutions.com.br">contato@aionissolutions.com.br</a>
-              </div>
-            </li>
-            <li>
-              <span class="ci-ic">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-              </span>
-              <div>
-                <span class="ci-label">Atendimento</span>
-                <span class="ci-value">Segunda a sexta, horário comercial</span>
-              </div>
-            </li>
-          </ul>
+          <div class="contact-actions">
+            <a class="btn btn-primary btn-lg" href="https://wa.me/5512996049308?text=Ol%C3%A1!%20Quero%20agendar%20uma%20visita%20de%20diagn%C3%B3stico%20gratuita." target="_blank" rel="noopener" data-track="whatsapp-contato">
+              <svg class="icon" aria-hidden="true"><use href="#i-message"/></svg><span class="num">WhatsApp (12) 99604-9308</span>
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="mailto:contato@aionissolutions.com.br" data-track="email-contato">
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>contato@aionissolutions.com.br
+            </a>
+          </div>
+
+          <p class="contact-area">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+            <span>Atendimento no Vale do Paraíba e região (SP), a partir de Pindamonhangaba. Remoto para outras regiões.</span>
+          </p>
         </div>
 
         <form class="contact-form" id="contact-form" novalidate>
           <div class="field">
             <label for="name">Nome</label>
-            <input type="text" id="name" name="name" placeholder="Seu nome" required autocomplete="name" />
+            <input type="text" id="name" name="name" required autocomplete="name" />
           </div>
           <div class="field">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="voce@empresa.com" required autocomplete="email" />
+            <label for="company">Empresa</label>
+            <input type="text" id="company" name="company" autocomplete="organization" />
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="whatsapp">WhatsApp</label>
+              <input type="tel" id="whatsapp" name="whatsapp" inputmode="tel" placeholder="(12) 99999-9999" required autocomplete="tel-national" />
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
           </div>
           <div class="field">
-            <label for="message">Mensagem</label>
-            <textarea id="message" name="message" rows="4" placeholder="Conte um pouco sobre o seu projeto ou desafio" required></textarea>
+            <label for="subject">O que você quer resolver?</label>
+            <select id="subject" name="subject" required>
+              <option value="">Selecione</option>
+              <option>Sistemas sob medida</option>
+              <option>Dados e BI</option>
+              <option>Financeiro e automação</option>
+              <option>Infraestrutura e redes</option>
+              <option>Outro</option>
+            </select>
           </div>
-          <button type="submit" class="btn btn-gradient btn-lg btn-block">Enviar mensagem</button>
+          <div class="field">
+            <label for="message">Mensagem <span class="optional">(opcional)</span></label>
+            <textarea id="message" name="message" rows="3"></textarea>
+          </div>
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="field-check">
+            <input type="checkbox" id="lgpd" name="lgpd" required />
+            <label for="lgpd">Concordo que a Aionis use meus dados para retornar este contato (LGPD).<span class="todo"> [PREENCHER: link da política de privacidade]</span></label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar mensagem</button>
           <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -288,44 +505,41 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="Aionis logo_sem_fundo.png" alt="Aionis Solutions" class="footer-logo" />
-        <p>Soluções e consultoria em TI sob medida para transformar o seu negócio com tecnologia.</p>
+        <span class="footer-logo-wrap"><img src="img/logo.webp" alt="Aionis Solutions" class="footer-logo" width="500" height="160" loading="lazy" /></span>
+        <p>Soluções e Consultoria em TI</p>
       </div>
 
-      <div class="footer-col">
-        <h4>Navegação</h4>
+      <nav class="footer-col" aria-label="Rodapé">
+        <h2 class="footer-title">Navegação</h2>
         <ul>
-          <li><a href="#top">Início</a></li>
           <li><a href="#solucoes">Soluções</a></li>
-          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#como-trabalhamos">Como trabalhamos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
-      </div>
+      </nav>
 
       <div class="footer-col">
-        <h4>Contato</h4>
+        <h2 class="footer-title">Contato</h2>
         <ul>
+          <li><a href="https://wa.me/5512996049308" target="_blank" rel="noopener"><span class="num">(12) 99604-9308</span></a></li>
           <li><a href="mailto:contato@aionissolutions.com.br">contato@aionissolutions.com.br</a></li>
+          <li>Pindamonhangaba, SP</li>
+          <li class="todo">CNPJ [PREENCHER]</li>
         </ul>
-        <div class="socials" aria-label="Redes sociais">
-          <a href="#" aria-label="LinkedIn" class="social">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
-          </a>
-          <a href="#" aria-label="Instagram" class="social">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-          </a>
-          <a href="mailto:contato@aionissolutions.com.br" aria-label="E-mail" class="social">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          </a>
-        </div>
       </div>
     </div>
 
     <div class="container footer-bottom">
-      <p>&copy; <span id="year">2026</span> Aionis Solutions. Todos os direitos reservados.</p>
-      <p>Soluções e Consultoria em TI</p>
+      <p>&copy; <span id="year" class="num">2026</span> Aionis Solutions. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <!-- WhatsApp fixo no mobile -->
+  <a class="wa-bar" href="https://wa.me/5512996049308?text=Ol%C3%A1!%20Quero%20agendar%20uma%20visita%20de%20diagn%C3%B3stico%20gratuita." target="_blank" rel="noopener" data-track="whatsapp-fixo">
+    <svg class="icon" aria-hidden="true"><use href="#i-message"/></svg>Falar no WhatsApp
+  </a>
 
   <script src="script.js"></script>
 </body>
